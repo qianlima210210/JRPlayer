@@ -1,0 +1,6 @@
+framework module Pods_JRPlayer {
+  umbrella header "Pods-JRPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

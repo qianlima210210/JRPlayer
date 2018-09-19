@@ -10,7 +10,6 @@
 #import "JRPlayerView.h"
 #import "JRPlayerControlView.h"
 
-
 @interface JRPlayerView ()
 
 @property (nonatomic, strong) AVPlayer *player;

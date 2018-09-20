@@ -25,7 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSURL *url = [NSURL URLWithString:@"http://vjs.zencdn.net/v/oceans.mp4"];
+    NSURL *url = [NSURL URLWithString:@"http://ohjdda8lm.bkt.clouddn.com/course/sample1.mp4"];
     JRPlayerView * playerView = [JRPlayerView playerViewWithURL:url];
     [self.view addSubview:playerView];
     _playerView = playerView;

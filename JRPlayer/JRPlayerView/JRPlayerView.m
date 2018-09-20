@@ -107,10 +107,12 @@
     
     _playerControlView.playBtnClicked = ^{
         NSLog(@"playBtnClicked");
+        [weakSelf.player play];
     };
     
     _playerControlView.pauseBtnClicked = ^{
         NSLog(@"pauseBtnClicked");
+        [weakSelf.player pause];
     };
     
     _playerControlView.maxBtnClicked = ^{
@@ -210,8 +212,6 @@
         if (status == AVPlayerStatusReadyToPlay) {
             [self readyToPlay];
             [self monitoringPlaybackWithAVPlayerItem:item];
-            
-            [_player play];
             
         }else if (status == AVPlayerStatusFailed){
             NSLog(@"AVPlayerStatusFailed");

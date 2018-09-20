@@ -9,8 +9,13 @@
 #import <AVKit/AVKit.h>
 #import "JRPlayerView.h"
 #import "JRPlayerControlView.h"
+#import "TempViewController.h"
 
+@import Masonry;
 @interface JRPlayerView ()
+
+@property (nonatomic, strong) UIView *fatherView;
+@property (nonatomic, strong) TempViewController *tempVC;
 
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) AVPlayerLayer *playerLayer;
@@ -88,7 +93,6 @@
     _playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
     
     _playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;
-    _playerLayer.backgroundColor = UIColor.greenColor.CGColor;
     [self.layer addSublayer:_playerLayer];
 }
 
@@ -112,15 +116,42 @@
     _playerControlView.maxBtnClicked = ^{
         NSLog(@"maxBtnClicked");
         
+        //记录父视图、标记全屏
+        weakSelf.fatherView  = weakSelf.superview;
+        
+        //先移除
         [weakSelf removeFromSuperview];
-        //添加到window
-        UIWindow *window = [UIApplication sharedApplication].keyWindow;
-        weakSelf.frame = window.bounds;
-        [window addSubview:weakSelf];
+        
+        //创建过度视图控制器
+        weakSelf.tempVC = [TempViewController new];
+        [weakSelf.tempVC.view addSubview:weakSelf];
+        
+        [weakSelf mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(weakSelf.tempVC.view.mas_left).offset(0.0);
+            make.top.equalTo(weakSelf.tempVC.view.mas_top).offset(0.0);
+            make.width.equalTo(weakSelf.tempVC.view.mas_width).offset(0.0);
+            make.height.equalTo(weakSelf.tempVC.view.mas_height).offset(0.0);
+        }];
+        
+        UIViewController *rootVC = UIApplication.sharedApplication.delegate.window.rootViewController;
+        [rootVC presentViewController:weakSelf.tempVC animated:NO completion:nil];
+        
     };
     
     _playerControlView.minBtnClicked = ^{
         NSLog(@"minBtnClicked");
+        if (weakSelf.tempVC) {
+            [weakSelf.tempVC dismissViewControllerAnimated:NO completion:nil];
+            weakSelf.tempVC = nil;
+            
+            [weakSelf.fatherView addSubview:weakSelf];
+            [weakSelf mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(weakSelf.fatherView.mas_left).offset(0.0);
+                make.top.equalTo(weakSelf.fatherView.mas_top).offset(0.0);
+                make.width.equalTo(weakSelf.fatherView.mas_width).offset(0.0);
+                make.height.equalTo(weakSelf.fatherView.mas_height).multipliedBy(1.0 / 3.0);
+            }];
+        }
     };
     
     _playerControlView.backBtnClicked = ^{

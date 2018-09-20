@@ -30,15 +30,37 @@
     [self.view addSubview:playerView];
     _playerView = playerView;
     
-    [self viewWillTransitionToSize:UIScreen.mainScreen.bounds.size withTransitionCoordinator:self.transitionCoordinator];
+    [_playerView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view.mas_left).offset(0.0);
+        make.top.equalTo(self.view.mas_top).offset(0.0);
+        make.width.equalTo(self.view.mas_width).offset(0.0);
+        make.height.equalTo(self.view.mas_height).multipliedBy(1.0 / 3.0);
+    }];
 }
 
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
-    if (size.width > size.height) {
-        _playerView.frame = CGRectMake(0, 0, size.width, size.height);
-    }else{
-       _playerView.frame = CGRectMake(0, kStatusBarHeight, size.width, size.height / 2.0);
-    }
+- (BOOL)shouldAutorotate{
+    return YES;
 }
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+    return UIInterfaceOrientationPortrait;
+}
+
+- (BOOL)prefersStatusBarHidden{
+    return NO;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleDefault;
+}
+
+- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation{
+    return UIStatusBarAnimationNone;
+}
+
 
 @end

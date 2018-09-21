@@ -23,6 +23,8 @@
 		D05291262152333300211C76 /* JRBackBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D05291202152333300211C76 /* JRBackBtn@2x.png */; };
 		D05291272152333300211C76 /* JRMaxBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D05291212152333300211C76 /* JRMaxBtn@2x.png */; };
 		D052912A215338BF00211C76 /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0529129215338BF00211C76 /* TempViewController.m */; };
+		D05291ED2154B71100211C76 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D05291EC2154B71100211C76 /* TableViewController.m */; };
+		D05291F02154BF3400211C76 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D05291EF2154BF3400211C76 /* TableViewCell.m */; };
 		FACFA66DF78EB54803BF7C78 /* Pods_JRPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D557A3960629500C2075FAA /* Pods_JRPlayer.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,10 @@
 		D05291212152333300211C76 /* JRMaxBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JRMaxBtn@2x.png"; sourceTree = "<group>"; };
 		D0529128215338BF00211C76 /* TempViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TempViewController.h; sourceTree = "<group>"; };
 		D0529129215338BF00211C76 /* TempViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempViewController.m; sourceTree = "<group>"; };
+		D05291EB2154B71100211C76 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		D05291EC2154B71100211C76 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		D05291EE2154BF3400211C76 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		D05291EF2154BF3400211C76 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +124,10 @@
 				D05291052151E99F00211C76 /* LaunchScreen.storyboard */,
 				D05291082151E99F00211C76 /* Info.plist */,
 				D05291092151E99F00211C76 /* main.m */,
-				D0529128215338BF00211C76 /* TempViewController.h */,
-				D0529129215338BF00211C76 /* TempViewController.m */,
+				D05291EB2154B71100211C76 /* TableViewController.h */,
+				D05291EC2154B71100211C76 /* TableViewController.m */,
+				D05291EE2154BF3400211C76 /* TableViewCell.h */,
+				D05291EF2154BF3400211C76 /* TableViewCell.m */,
 			);
 			path = JRPlayer;
 			sourceTree = "<group>";
@@ -131,6 +139,8 @@
 				D05291122151E9ED00211C76 /* JRPlayerView.m */,
 				D052911821520E6100211C76 /* JRPlayerControlView.h */,
 				D052911921520E6100211C76 /* JRPlayerControlView.m */,
+				D0529128215338BF00211C76 /* TempViewController.h */,
+				D0529129215338BF00211C76 /* TempViewController.m */,
 			);
 			path = JRPlayerView;
 			sourceTree = "<group>";
@@ -280,9 +290,11 @@
 				D05291132151E9ED00211C76 /* JRPlayerView.m in Sources */,
 				D052910A2151E99F00211C76 /* main.m in Sources */,
 				D05291172151ED3000211C76 /* JRViewCoordinateMacro.m in Sources */,
+				D05291F02154BF3400211C76 /* TableViewCell.m in Sources */,
 				D05290FC2151E99E00211C76 /* AppDelegate.m in Sources */,
 				D052912A215338BF00211C76 /* TempViewController.m in Sources */,
 				D052911A21520E6100211C76 /* JRPlayerControlView.m in Sources */,
+				D05291ED2154B71100211C76 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -411,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -424,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC5PAY3DZR;
 				INFOPLIST_FILE = JRPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC5PAY3DZR;
 				INFOPLIST_FILE = JRPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

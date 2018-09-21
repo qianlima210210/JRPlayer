@@ -136,7 +136,9 @@
         }];
         
         UIViewController *rootVC = UIApplication.sharedApplication.delegate.window.rootViewController;
-        [rootVC presentViewController:weakSelf.tempVC animated:NO completion:nil];
+        [rootVC presentViewController:weakSelf.tempVC animated:NO completion:^{
+            
+        }];
         
     };
     
@@ -151,7 +153,7 @@
                 make.left.equalTo(weakSelf.fatherView.mas_left).offset(0.0);
                 make.top.equalTo(weakSelf.fatherView.mas_top).offset(0.0);
                 make.width.equalTo(weakSelf.fatherView.mas_width).offset(0.0);
-                make.height.equalTo(weakSelf.fatherView.mas_height).multipliedBy(1.0 / 3.0);
+                make.height.equalTo(weakSelf.fatherView.mas_height).offset(0.0);
             }];
         }
     };

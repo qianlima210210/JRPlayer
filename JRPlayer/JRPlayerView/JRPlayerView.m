@@ -55,6 +55,7 @@
  */
 +(instancetype)playerViewWithURL:(NSURL*)url{
     JRPlayerView *playerView = [JRPlayerView new];
+    playerView.backgroundColor = [UIColor yellowColor];
     [playerView setPlayerItemWithURL:url];
     return playerView;
 }

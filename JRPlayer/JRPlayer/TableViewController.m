@@ -26,6 +26,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [self.tableView registerClass:[TableViewCell class] forCellReuseIdentifier:@"TableViewCell"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,7 +37,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

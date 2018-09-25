@@ -9,13 +9,11 @@
 #import <AVKit/AVKit.h>
 #import "JRPlayerView.h"
 #import "JRPlayerControlView.h"
-#import "TempViewController.h"
 
 @import Masonry;
 @interface JRPlayerView ()
 
 @property (nonatomic, strong) UIView *fatherView;
-@property (nonatomic, strong) TempViewController *tempVC;
 
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) AVPlayerLayer *playerLayer;
@@ -64,6 +62,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.backgroundColor = UIColor.redColor;
         [self addAVPlayer];
         [self addJRPlayerControlView];
     }
@@ -123,40 +122,39 @@
         weakSelf.fatherView  = weakSelf.superview;
         
         //先移除
-        [weakSelf removeFromSuperview];
+        //[weakSelf removeFromSuperview];
         
-        //创建过度视图控制器
-        weakSelf.tempVC = [TempViewController new];
-        [weakSelf.tempVC.view addSubview:weakSelf];
+        UIWindow *window = [(id)[UIApplication sharedApplication].delegate valueForKey:@"window"];
+        CGRect con_portraitRect = [window convertRect:weakSelf.superview.bounds fromView:weakSelf.superview];
+        CGAffineTransform transform = CGAffineTransformIdentity;
+        transform = CGAffineTransformMakeRotation(M_PI_2);
+        weakSelf.frame = con_portraitRect;
+        [window addSubview:weakSelf];
         
-        [weakSelf mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(weakSelf.tempVC.view.mas_left).offset(0.0);
-            make.top.equalTo(weakSelf.tempVC.view.mas_top).offset(0.0);
-            make.width.equalTo(weakSelf.tempVC.view.mas_width).offset(0.0);
-            make.height.equalTo(weakSelf.tempVC.view.mas_height).offset(0.0);
+        [UIView animateWithDuration:0.4 animations:^{
+            CGFloat width  = window.bounds.size.width;
+            CGFloat height = window.bounds.size.height;
+            CGFloat max = MAX(width, height);
+            CGFloat min = MIN(width, height);
+            weakSelf.frame = (CGRect){CGPointZero, (CGSize){max, min}};
+            weakSelf.center = (CGPoint){min * 0.5, max * 0.5};
+            //[weakSelf layoutIfNeeded];
+            weakSelf.transform = transform;
         }];
-        
-        UIViewController *rootVC = UIApplication.sharedApplication.delegate.window.rootViewController;
-        [rootVC presentViewController:weakSelf.tempVC animated:NO completion:^{
-            
-        }];
-        
     };
     
     _playerControlView.minBtnClicked = ^{
         NSLog(@"minBtnClicked");
-        if (weakSelf.tempVC) {
-            [weakSelf.tempVC dismissViewControllerAnimated:NO completion:nil];
-            weakSelf.tempVC = nil;
-            
-            [weakSelf.fatherView addSubview:weakSelf];
-            [weakSelf mas_remakeConstraints:^(MASConstraintMaker *make) {
-                make.left.equalTo(weakSelf.fatherView.mas_left).offset(0.0);
-                make.top.equalTo(weakSelf.fatherView.mas_top).offset(0.0);
-                make.width.equalTo(weakSelf.fatherView.mas_width).offset(0.0);
-                make.height.equalTo(weakSelf.fatherView.mas_height).offset(0.0);
-            }];
-        }
+        
+        CGAffineTransform transform = CGAffineTransformIdentity;
+        transform = CGAffineTransformMakeRotation(-M_PI_2);
+        [weakSelf.fatherView addSubview:weakSelf];
+        
+        [UIView animateWithDuration:0.4 animations:^{
+            weakSelf.frame = weakSelf.fatherView.bounds;
+            //[weakSelf layoutIfNeeded];
+            weakSelf.transform = transform;
+        }];
     };
     
     _playerControlView.backBtnClicked = ^{

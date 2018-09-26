@@ -12,6 +12,8 @@
 @import Masonry;
 @interface TableViewController ()
 
+@property (nonatomic, strong) NSArray *urlArray;
+
 @end
 
 @implementation TableViewController
@@ -19,11 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    _urlArray = @[@"http://ohjdda8lm.bkt.clouddn.com/course/sample1.mp4",
+                      @"http://v.dansewudao.com/502718a3e0a24673b2afa1c5c27cd301/771b26823ac64631b8977a718610b779-9f4d50aeba651a86d2b45f89f4799f31-sd.mp4",
+                  @"http://ohjdda8lm.bkt.clouddn.com/course/sample1.mp4",
+                      @"http://v.dansewudao.com/49e9f074e890493fa1f1677ca4f2faec/69e262b1b2014ff3afbb4052b1829d7a-7d56bc62083a11837ece71958f513034-sd.mp4",
+                        @"http://ohjdda8lm.bkt.clouddn.com/course/sample1.mp4"
+                      ];
     
     [self.tableView registerClass:[TableViewCell class] forCellReuseIdentifier:@"TableViewCell"];
     
@@ -37,7 +40,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return _urlArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -48,16 +51,11 @@
     }
     
     // Configure the cell...
-    NSURL *url = [NSURL URLWithString:@"http://ohjdda8lm.bkt.clouddn.com/course/sample1.mp4"];
+    NSString *urlStr = [_urlArray objectAtIndex:indexPath.row];
+    NSURL *url = [NSURL URLWithString:urlStr];
     JRPlayerView * playerView = [JRPlayerView playerViewWithURL:url];
+    playerView.frame = cell.contentView.bounds;
     [cell.contentView addSubview:playerView];
-
-    [playerView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(cell.contentView.mas_left).offset(0.0);
-        make.top.equalTo(cell.contentView.mas_top).offset(0.0);
-        make.width.equalTo(cell.contentView.mas_width).offset(0.0);
-        make.height.equalTo(cell.contentView.mas_height).offset(0.0);
-    }];
     
     cell.playerView = playerView;
     

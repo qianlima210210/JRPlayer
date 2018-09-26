@@ -22,7 +22,6 @@
 		D05291252152333300211C76 /* JRPauseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D052911F2152333300211C76 /* JRPauseBtn@2x.png */; };
 		D05291262152333300211C76 /* JRBackBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D05291202152333300211C76 /* JRBackBtn@2x.png */; };
 		D05291272152333300211C76 /* JRMaxBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D05291212152333300211C76 /* JRMaxBtn@2x.png */; };
-		D052912A215338BF00211C76 /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0529129215338BF00211C76 /* TempViewController.m */; };
 		D05291ED2154B71100211C76 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D05291EC2154B71100211C76 /* TableViewController.m */; };
 		D05291F02154BF3400211C76 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D05291EF2154BF3400211C76 /* TableViewCell.m */; };
 		FACFA66DF78EB54803BF7C78 /* Pods_JRPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D557A3960629500C2075FAA /* Pods_JRPlayer.framework */; };
@@ -54,8 +53,6 @@
 		D052911F2152333300211C76 /* JRPauseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JRPauseBtn@2x.png"; sourceTree = "<group>"; };
 		D05291202152333300211C76 /* JRBackBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JRBackBtn@2x.png"; sourceTree = "<group>"; };
 		D05291212152333300211C76 /* JRMaxBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JRMaxBtn@2x.png"; sourceTree = "<group>"; };
-		D0529128215338BF00211C76 /* TempViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TempViewController.h; sourceTree = "<group>"; };
-		D0529129215338BF00211C76 /* TempViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempViewController.m; sourceTree = "<group>"; };
 		D05291EB2154B71100211C76 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		D05291EC2154B71100211C76 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		D05291EE2154BF3400211C76 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -139,8 +136,6 @@
 				D05291122151E9ED00211C76 /* JRPlayerView.m */,
 				D052911821520E6100211C76 /* JRPlayerControlView.h */,
 				D052911921520E6100211C76 /* JRPlayerControlView.m */,
-				D0529128215338BF00211C76 /* TempViewController.h */,
-				D0529129215338BF00211C76 /* TempViewController.m */,
 			);
 			path = JRPlayerView;
 			sourceTree = "<group>";
@@ -292,7 +287,6 @@
 				D05291172151ED3000211C76 /* JRViewCoordinateMacro.m in Sources */,
 				D05291F02154BF3400211C76 /* TableViewCell.m in Sources */,
 				D05290FC2151E99E00211C76 /* AppDelegate.m in Sources */,
-				D052912A215338BF00211C76 /* TempViewController.m in Sources */,
 				D052911A21520E6100211C76 /* JRPlayerControlView.m in Sources */,
 				D05291ED2154B71100211C76 /* TableViewController.m in Sources */,
 			);

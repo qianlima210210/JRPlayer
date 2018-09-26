@@ -131,14 +131,13 @@
         weakSelf.frame = con_portraitRect;
         [window addSubview:weakSelf];
         
-        [UIView animateWithDuration:0.4 animations:^{
+        [UIView animateWithDuration:0.2 animations:^{
             CGFloat width  = window.bounds.size.width;
             CGFloat height = window.bounds.size.height;
             CGFloat max = MAX(width, height);
             CGFloat min = MIN(width, height);
             weakSelf.frame = (CGRect){CGPointZero, (CGSize){max, min}};
             weakSelf.center = (CGPoint){min * 0.5, max * 0.5};
-            //[weakSelf layoutIfNeeded];
             weakSelf.transform = transform;
         }];
     };
@@ -147,13 +146,21 @@
         NSLog(@"minBtnClicked");
         
         CGAffineTransform transform = CGAffineTransformIdentity;
-        transform = CGAffineTransformMakeRotation(-M_PI_2);
-        [weakSelf.fatherView addSubview:weakSelf];
+        UIWindow *window = [(id)[UIApplication sharedApplication].delegate valueForKey:@"window"];
+        CGRect con_portraitRect = [window convertRect:weakSelf.fatherView.bounds fromView:weakSelf.fatherView];
         
-        [UIView animateWithDuration:0.4 animations:^{
-            weakSelf.frame = weakSelf.fatherView.bounds;
-            //[weakSelf layoutIfNeeded];
+        [UIView animateWithDuration:0.2 animations:^{
             weakSelf.transform = transform;
+            weakSelf.bounds = (CGRect){CGPointZero, con_portraitRect.size};
+            weakSelf.center =
+            (CGPoint){con_portraitRect.origin.x +
+                con_portraitRect.size.width * 0.5,
+                con_portraitRect.origin.y +
+                con_portraitRect.size.height * 0.5};
+            
+        } completion:^(BOOL finished) {
+            [weakSelf.fatherView addSubview:weakSelf];
+            weakSelf.frame = weakSelf.fatherView.bounds;
         }];
     };
     

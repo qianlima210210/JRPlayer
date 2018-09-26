@@ -61,18 +61,18 @@
     return self;
 }
 
-//添加下面控制条
--(void)addBottomView{
+//添加上面控制条
+-(void)addTopView{
     _topView = [UIView new];
     [self addSubview:_topView];
-    _topView.backgroundColor = UIColor.blackColor;
+    _topView.backgroundColor = UIColor.cyanColor;
     
     //添加返回按钮
     
 }
 
-//添加上面控制条
--(void)addTopView{
+//添加下面控制条
+-(void)addBottomView{
     _bottomView = [UIView new];
     [self addSubview:_bottomView];
     _bottomView.backgroundColor = UIColor.blackColor;

@@ -121,24 +121,26 @@
         //记录父视图、标记全屏
         weakSelf.fatherView  = weakSelf.superview;
         
-        //先移除
-        //[weakSelf removeFromSuperview];
-        
+        //获取window作为新的父视图
         UIWindow *window = [(id)[UIApplication sharedApplication].delegate valueForKey:@"window"];
+        //将当前坐标系下的frme转换成windowx坐标系的坐标(目的保证平滑移动)
         CGRect con_portraitRect = [window convertRect:weakSelf.superview.bounds fromView:weakSelf.superview];
-        CGAffineTransform transform = CGAffineTransformIdentity;
-        transform = CGAffineTransformMakeRotation(M_PI_2);
+        //正向旋转90度
+        CGAffineTransform transform = transform = CGAffineTransformMakeRotation(M_PI_2);
+        
         weakSelf.frame = con_portraitRect;
         [window addSubview:weakSelf];
         
         [UIView animateWithDuration:0.2 animations:^{
+            //先旋转
+            weakSelf.transform = transform;
+            //改变frame
             CGFloat width  = window.bounds.size.width;
             CGFloat height = window.bounds.size.height;
             CGFloat max = MAX(width, height);
             CGFloat min = MIN(width, height);
-            weakSelf.frame = (CGRect){CGPointZero, (CGSize){max, min}};
+            weakSelf.bounds = (CGRect){CGPointZero, (CGSize){max, min}};
             weakSelf.center = (CGPoint){min * 0.5, max * 0.5};
-            weakSelf.transform = transform;
         }];
     };
     

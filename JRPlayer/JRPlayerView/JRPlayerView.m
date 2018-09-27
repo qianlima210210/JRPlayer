@@ -126,10 +126,13 @@
         //将当前坐标系下的frme转换成windowx坐标系的坐标(目的保证平滑移动)
         CGRect con_portraitRect = [window convertRect:weakSelf.superview.bounds fromView:weakSelf.superview];
         //正向旋转90度
-        CGAffineTransform transform = transform = CGAffineTransformMakeRotation(M_PI_2);
+        CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI_2);
         
         weakSelf.frame = con_portraitRect;
         [window addSubview:weakSelf];
+        
+        //隐藏状态栏
+        [[NSNotificationCenter defaultCenter]postNotificationName:NotificationOfHideStatusBar object:nil];
         
         [UIView animateWithDuration:0.2 animations:^{
             //先旋转
@@ -147,12 +150,19 @@
     _playerControlView.minBtnClicked = ^{
         NSLog(@"minBtnClicked");
         
-        CGAffineTransform transform = CGAffineTransformIdentity;
+        //获取获取当前父视图
         UIWindow *window = [(id)[UIApplication sharedApplication].delegate valueForKey:@"window"];
+        //将以前fatherView坐标系在的坐标，换成window坐标系下的坐标
         CGRect con_portraitRect = [window convertRect:weakSelf.fatherView.bounds fromView:weakSelf.fatherView];
+        //恢复到原始角度
+        CGAffineTransform transform = CGAffineTransformIdentity;
+        
+        //显示状态栏
+        [[NSNotificationCenter defaultCenter]postNotificationName:NotificationOfShowStatusBar object:nil];
         
         [UIView animateWithDuration:0.2 animations:^{
             weakSelf.transform = transform;
+            
             weakSelf.bounds = (CGRect){CGPointZero, con_portraitRect.size};
             weakSelf.center =
             (CGPoint){con_portraitRect.origin.x +

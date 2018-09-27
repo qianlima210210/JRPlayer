@@ -22,6 +22,9 @@
 #define kMinBtnWidth 20.0f
 #define kMinBtnHeight 20.0f
 
+#define kBackBtnWidth 20.0f
+#define kBackBtnHeight 20.0f
+
 #define kLeftMagin 0.0f
 #define kRightMagin 3.0f
 #define kMiddleMagin 5.0f
@@ -68,7 +71,11 @@
     _topView.backgroundColor = UIColor.cyanColor;
     
     //添加返回按钮
-    
+    _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *backBtnImage = [UIImage imageNamed:@"JRBackBtn"];
+    [_backBtn setImage:backBtnImage forState:UIControlStateNormal];
+    [_backBtn addTarget:self action:@selector(backBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [_topView addSubview:_backBtn];
 }
 
 //添加下面控制条
@@ -183,6 +190,11 @@
 //设置上面控制条位置
 -(void)setTopViewFrame{
     _topView.frame = CGRectMake(0, 0, self.bounds.size.width, kControlBarHeight);
+    
+    _backBtn.frame = CGRectMake(kLeftMagin + 10,
+                                (_topView.bounds.size.height - kBackBtnHeight) / 2.0,
+                                kBackBtnWidth,
+                                kBackBtnHeight);
 }
 
 //MARK: 按钮响应函数

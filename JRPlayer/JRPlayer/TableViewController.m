@@ -13,10 +13,16 @@
 @interface TableViewController ()
 
 @property (nonatomic, strong) NSArray *urlArray;
+@property BOOL isHideStatusBar;
 
 @end
 
 @implementation TableViewController
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,11 +36,19 @@
     
     [self.tableView registerClass:[TableViewCell class] forCellReuseIdentifier:@"TableViewCell"];
     
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(onReceivedNotificationOfHideStatusBar:) name:NotificationOfHideStatusBar object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(onReceivedNotificationOfShowStatusBar:) name:NotificationOfShowStatusBar object:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)onReceivedNotificationOfHideStatusBar:(NSNotification*)notificatiopn {
+    _isHideStatusBar = YES;
+
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+-(void)onReceivedNotificationOfShowStatusBar:(NSNotification*)notificatiopn {
+    _isHideStatusBar = NO;
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 #pragma mark - Table view data source
@@ -125,7 +139,7 @@
 }
 
 - (BOOL)prefersStatusBarHidden{
-    return NO;
+    return _isHideStatusBar;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle{

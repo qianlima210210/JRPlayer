@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define NotificationOfHideStatusBar @"NotificationOfHideStatusBar"
+#define NotificationOfShowStatusBar @"NotificationOfShowStatusBar"
+
 @interface JRPlayerView : UIView
 
 /**

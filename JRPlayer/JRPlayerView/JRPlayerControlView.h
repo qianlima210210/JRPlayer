@@ -16,4 +16,6 @@
 @property (nonatomic, copy) void (^minBtnClicked)(void);
 @property (nonatomic, copy) void (^backBtnClicked)(void);
 
+-(void)periodicTimeObserverForInterval:(CGFloat) value;
+
 @end

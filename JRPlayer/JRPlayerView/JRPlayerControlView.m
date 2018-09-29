@@ -197,6 +197,10 @@
                                 kBackBtnHeight);
 }
 
+-(void)periodicTimeObserverForInterval:(CGFloat) value{
+    self.slider.value = value;
+}
+
 //MARK: 按钮响应函数
 -(void)playBtnClicked:(id)sender{
     _playBtn.hidden = YES;
@@ -237,6 +241,10 @@
 -(void)backBtnClicked:(id)sender{
     if (_backBtnClicked) {
         _backBtnClicked();
+        
+        if (_minBtnClicked) {
+            _minBtnClicked();
+        }
     }
 }
 

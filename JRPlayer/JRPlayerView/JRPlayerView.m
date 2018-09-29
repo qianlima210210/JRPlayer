@@ -259,10 +259,14 @@
 -(void)monitoringPlaybackWithAVPlayerItem:(AVPlayerItem*)item{
     [self removeMonitoringPlayback];
     
-    //__weak typeof(self) weakSelf = self;
-    _playTimeObserver = [_player addPeriodicTimeObserverForInterval:CMTimeMake(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
-        //通知通知控制条更新播放进度
+    __weak typeof(self) weakSelf = self;
+    _playTimeObserver = [_player addPeriodicTimeObserverForInterval:CMTimeMake(1, 10) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+        //获取总时长
+        CGFloat duration = CMTimeGetSeconds(item.duration);
+        //获取当前播放秒
+        float currentPlayTime = (double)item.currentTime.value/ item.currentTime.timescale;
         
+        [weakSelf.playerControlView periodicTimeObserverForInterval:currentPlayTime / duration];
     }];
 }
 

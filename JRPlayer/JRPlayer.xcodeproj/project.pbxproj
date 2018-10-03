@@ -24,59 +24,6 @@
 		D05291272152333300211C76 /* JRMaxBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D05291212152333300211C76 /* JRMaxBtn@2x.png */; };
 		D05291ED2154B71100211C76 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D05291EC2154B71100211C76 /* TableViewController.m */; };
 		D05291F02154BF3400211C76 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D05291EF2154BF3400211C76 /* TableViewCell.m */; };
-		D0672764215F92220052575E /* nav_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D067272C215F92220052575E /* nav_back_normal@2x.png */; };
-		D0672765215F92220052575E /* login_delet_tap@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D067272D215F92220052575E /* login_delet_tap@3x.png */; };
-		D0672766215F92220052575E /* login_forget_success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D067272E215F92220052575E /* login_forget_success@3x.png */; };
-		D0672767215F92220052575E /* login_delet_tap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D067272F215F92220052575E /* login_delet_tap@2x.png */; };
-		D0672768215F92220052575E /* login_forget_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672730215F92220052575E /* login_forget_success@2x.png */; };
-		D0672769215F92220052575E /* nav_back_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672731215F92220052575E /* nav_back_normal@3x.png */; };
-		D067276A215F92220052575E /* nav_back_tap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672732215F92220052575E /* nav_back_tap@2x.png */; };
-		D067276B215F92220052575E /* nav_back_tap@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672733215F92220052575E /* nav_back_tap@3x.png */; };
-		D067276C215F92220052575E /* login_password@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672734215F92220052575E /* login_password@3x.png */; };
-		D067276D215F92220052575E /* login_user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672735215F92220052575E /* login_user@2x.png */; };
-		D067276E215F92220052575E /* login_Verification@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672736215F92220052575E /* login_Verification@2x.png */; };
-		D067276F215F92220052575E /* toast_warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672737215F92220052575E /* toast_warning@2x.png */; };
-		D0672770215F92220052575E /* toast_warning@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672738215F92220052575E /* toast_warning@3x.png */; };
-		D0672771215F92220052575E /* login_Verification@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672739215F92220052575E /* login_Verification@3x.png */; };
-		D0672772215F92220052575E /* login_user@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D067273A215F92220052575E /* login_user@3x.png */; };
-		D0672773215F92220052575E /* login_password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D067273B215F92220052575E /* login_password@2x.png */; };
-		D0672774215F92220052575E /* login_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D067273C215F92220052575E /* login_logo@2x.png */; };
-		D0672775215F92220052575E /* toast_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D067273D215F92220052575E /* toast_right@3x.png */; };
-		D0672776215F92220052575E /* toast_loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D067273E215F92220052575E /* toast_loading@2x.png */; };
-		D0672777215F92220052575E /* toast_wrong@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D067273F215F92220052575E /* toast_wrong@2x.png */; };
-		D0672778215F92220052575E /* login_delet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672740215F92220052575E /* login_delet@3x.png */; };
-		D0672779215F92220052575E /* btn_icon_loding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672741215F92220052575E /* btn_icon_loding@2x.png */; };
-		D067277A215F92220052575E /* btn_icon_loding@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672742215F92220052575E /* btn_icon_loding@3x.png */; };
-		D067277B215F92220052575E /* login_delet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672743215F92220052575E /* login_delet@2x.png */; };
-		D067277C215F92220052575E /* toast_wrong@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672744215F92220052575E /* toast_wrong@3x.png */; };
-		D067277D215F92220052575E /* toast_loading@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672745215F92220052575E /* toast_loading@3x.png */; };
-		D067277E215F92220052575E /* toast_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672746215F92220052575E /* toast_right@2x.png */; };
-		D067277F215F92220052575E /* login_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672747215F92220052575E /* login_logo@3x.png */; };
-		D0672780215F92220052575E /* login_iPad控件_spec.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672749215F92220052575E /* login_iPad控件_spec.png */; };
-		D0672781215F92220052575E /* login_toast_spec.png in Resources */ = {isa = PBXBuildFile; fileRef = D067274A215F92220052575E /* login_toast_spec.png */; };
-		D0672782215F92220052575E /* login_keyboard1_spec.png in Resources */ = {isa = PBXBuildFile; fileRef = D067274B215F92220052575E /* login_keyboard1_spec.png */; };
-		D0672783215F92220052575E /* login_toast_locationg_spec.png in Resources */ = {isa = PBXBuildFile; fileRef = D067274C215F92220052575E /* login_toast_locationg_spec.png */; };
-		D0672784215F92220052575E /* login_password_spec.png in Resources */ = {isa = PBXBuildFile; fileRef = D067274D215F92220052575E /* login_password_spec.png */; };
-		D0672785215F92220052575E /* call_spec.png in Resources */ = {isa = PBXBuildFile; fileRef = D067274E215F92220052575E /* call_spec.png */; };
-		D0672786215F92220052575E /* login_keyboard2_spec.png in Resources */ = {isa = PBXBuildFile; fileRef = D067274F215F92220052575E /* login_keyboard2_spec.png */; };
-		D0672787215F92220052575E /* login_forget1_spec.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672750215F92220052575E /* login_forget1_spec.png */; };
-		D0672788215F92220052575E /* login_keyboard2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672752215F92220052575E /* login_keyboard2.png */; };
-		D0672789215F92220052575E /* login_keyboard1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672753215F92220052575E /* login_keyboard1.png */; };
-		D067278A215F92220052575E /* login_toast.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672754215F92220052575E /* login_toast.png */; };
-		D067278B215F92220052575E /* login_password.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672755215F92220052575E /* login_password.png */; };
-		D067278C215F92220052575E /* login_iPad控件.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672756215F92220052575E /* login_iPad控件.png */; };
-		D067278D215F92220052575E /* login_message.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672757215F92220052575E /* login_message.png */; };
-		D067278E215F92220052575E /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672758215F92220052575E /* call.png */; };
-		D067278F215F92220052575E /* login_forget1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672759215F92220052575E /* login_forget1.png */; };
-		D0672790215F92220052575E /* login_toast_locationg.png in Resources */ = {isa = PBXBuildFile; fileRef = D067275A215F92220052575E /* login_toast_locationg.png */; };
-		D0672791215F92220052575E /* login_forget2.png in Resources */ = {isa = PBXBuildFile; fileRef = D067275B215F92220052575E /* login_forget2.png */; };
-		D0672792215F92220052575E /* login_forget3.png in Resources */ = {isa = PBXBuildFile; fileRef = D067275C215F92220052575E /* login_forget3.png */; };
-		D0672793215F92220052575E /* login_keyboard2.png in Resources */ = {isa = PBXBuildFile; fileRef = D067275E215F92220052575E /* login_keyboard2.png */; };
-		D0672794215F92220052575E /* login_iPad控件.png in Resources */ = {isa = PBXBuildFile; fileRef = D067275F215F92220052575E /* login_iPad控件.png */; };
-		D0672795215F92220052575E /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672760215F92220052575E /* call.png */; };
-		D0672796215F92220052575E /* login_forget1.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672761215F92220052575E /* login_forget1.png */; };
-		D0672797215F92220052575E /* login_forget2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672762215F92220052575E /* login_forget2.png */; };
-		D0672798215F92220052575E /* login_forget3.png in Resources */ = {isa = PBXBuildFile; fileRef = D0672763215F92220052575E /* login_forget3.png */; };
 		FACFA66DF78EB54803BF7C78 /* Pods_JRPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D557A3960629500C2075FAA /* Pods_JRPlayer.framework */; };
 /* End PBXBuildFile section */
 
@@ -110,59 +57,6 @@
 		D05291EC2154B71100211C76 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		D05291EE2154BF3400211C76 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		D05291EF2154BF3400211C76 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
-		D067272C215F92220052575E /* nav_back_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back_normal@2x.png"; sourceTree = "<group>"; };
-		D067272D215F92220052575E /* login_delet_tap@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_delet_tap@3x.png"; sourceTree = "<group>"; };
-		D067272E215F92220052575E /* login_forget_success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_forget_success@3x.png"; sourceTree = "<group>"; };
-		D067272F215F92220052575E /* login_delet_tap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_delet_tap@2x.png"; sourceTree = "<group>"; };
-		D0672730215F92220052575E /* login_forget_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_forget_success@2x.png"; sourceTree = "<group>"; };
-		D0672731215F92220052575E /* nav_back_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back_normal@3x.png"; sourceTree = "<group>"; };
-		D0672732215F92220052575E /* nav_back_tap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back_tap@2x.png"; sourceTree = "<group>"; };
-		D0672733215F92220052575E /* nav_back_tap@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back_tap@3x.png"; sourceTree = "<group>"; };
-		D0672734215F92220052575E /* login_password@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_password@3x.png"; sourceTree = "<group>"; };
-		D0672735215F92220052575E /* login_user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_user@2x.png"; sourceTree = "<group>"; };
-		D0672736215F92220052575E /* login_Verification@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_Verification@2x.png"; sourceTree = "<group>"; };
-		D0672737215F92220052575E /* toast_warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toast_warning@2x.png"; sourceTree = "<group>"; };
-		D0672738215F92220052575E /* toast_warning@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toast_warning@3x.png"; sourceTree = "<group>"; };
-		D0672739215F92220052575E /* login_Verification@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_Verification@3x.png"; sourceTree = "<group>"; };
-		D067273A215F92220052575E /* login_user@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_user@3x.png"; sourceTree = "<group>"; };
-		D067273B215F92220052575E /* login_password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_password@2x.png"; sourceTree = "<group>"; };
-		D067273C215F92220052575E /* login_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_logo@2x.png"; sourceTree = "<group>"; };
-		D067273D215F92220052575E /* toast_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toast_right@3x.png"; sourceTree = "<group>"; };
-		D067273E215F92220052575E /* toast_loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toast_loading@2x.png"; sourceTree = "<group>"; };
-		D067273F215F92220052575E /* toast_wrong@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toast_wrong@2x.png"; sourceTree = "<group>"; };
-		D0672740215F92220052575E /* login_delet@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_delet@3x.png"; sourceTree = "<group>"; };
-		D0672741215F92220052575E /* btn_icon_loding@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_icon_loding@2x.png"; sourceTree = "<group>"; };
-		D0672742215F92220052575E /* btn_icon_loding@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_icon_loding@3x.png"; sourceTree = "<group>"; };
-		D0672743215F92220052575E /* login_delet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_delet@2x.png"; sourceTree = "<group>"; };
-		D0672744215F92220052575E /* toast_wrong@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toast_wrong@3x.png"; sourceTree = "<group>"; };
-		D0672745215F92220052575E /* toast_loading@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toast_loading@3x.png"; sourceTree = "<group>"; };
-		D0672746215F92220052575E /* toast_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toast_right@2x.png"; sourceTree = "<group>"; };
-		D0672747215F92220052575E /* login_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_logo@3x.png"; sourceTree = "<group>"; };
-		D0672749215F92220052575E /* login_iPad控件_spec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_iPad控件_spec.png"; sourceTree = "<group>"; };
-		D067274A215F92220052575E /* login_toast_spec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_toast_spec.png; sourceTree = "<group>"; };
-		D067274B215F92220052575E /* login_keyboard1_spec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_keyboard1_spec.png; sourceTree = "<group>"; };
-		D067274C215F92220052575E /* login_toast_locationg_spec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_toast_locationg_spec.png; sourceTree = "<group>"; };
-		D067274D215F92220052575E /* login_password_spec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_password_spec.png; sourceTree = "<group>"; };
-		D067274E215F92220052575E /* call_spec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call_spec.png; sourceTree = "<group>"; };
-		D067274F215F92220052575E /* login_keyboard2_spec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_keyboard2_spec.png; sourceTree = "<group>"; };
-		D0672750215F92220052575E /* login_forget1_spec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_forget1_spec.png; sourceTree = "<group>"; };
-		D0672752215F92220052575E /* login_keyboard2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_keyboard2.png; sourceTree = "<group>"; };
-		D0672753215F92220052575E /* login_keyboard1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_keyboard1.png; sourceTree = "<group>"; };
-		D0672754215F92220052575E /* login_toast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_toast.png; sourceTree = "<group>"; };
-		D0672755215F92220052575E /* login_password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_password.png; sourceTree = "<group>"; };
-		D0672756215F92220052575E /* login_iPad控件.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_iPad控件.png"; sourceTree = "<group>"; };
-		D0672757215F92220052575E /* login_message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_message.png; sourceTree = "<group>"; };
-		D0672758215F92220052575E /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
-		D0672759215F92220052575E /* login_forget1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_forget1.png; sourceTree = "<group>"; };
-		D067275A215F92220052575E /* login_toast_locationg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_toast_locationg.png; sourceTree = "<group>"; };
-		D067275B215F92220052575E /* login_forget2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_forget2.png; sourceTree = "<group>"; };
-		D067275C215F92220052575E /* login_forget3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_forget3.png; sourceTree = "<group>"; };
-		D067275E215F92220052575E /* login_keyboard2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_keyboard2.png; sourceTree = "<group>"; };
-		D067275F215F92220052575E /* login_iPad控件.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_iPad控件.png"; sourceTree = "<group>"; };
-		D0672760215F92220052575E /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
-		D0672761215F92220052575E /* login_forget1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_forget1.png; sourceTree = "<group>"; };
-		D0672762215F92220052575E /* login_forget2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_forget2.png; sourceTree = "<group>"; };
-		D0672763215F92220052575E /* login_forget3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_forget3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,7 +152,6 @@
 		D052911B2152320C00211C76 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				D0672729215F92220052575E /* Pic */,
 				D05291202152333300211C76 /* JRBackBtn@2x.png */,
 				D05291212152333300211C76 /* JRMaxBtn@2x.png */,
 				D052911E2152333300211C76 /* JRMinBtn@2x.png */,
@@ -267,106 +160,6 @@
 				D052911D2152333300211C76 /* JRRound.png */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		D0672729215F92220052575E /* Pic */ = {
-			isa = PBXGroup;
-			children = (
-				D067272A215F92220052575E /* ipad1.0_login */,
-				D067275D215F92220052575E /* forget */,
-			);
-			path = Pic;
-			sourceTree = "<group>";
-		};
-		D067272A215F92220052575E /* ipad1.0_login */ = {
-			isa = PBXGroup;
-			children = (
-				D067272B215F92220052575E /* login_images_icon */,
-				D0672748215F92220052575E /* login_标注 */,
-				D0672751215F92220052575E /* login_png */,
-			);
-			path = ipad1.0_login;
-			sourceTree = "<group>";
-		};
-		D067272B215F92220052575E /* login_images_icon */ = {
-			isa = PBXGroup;
-			children = (
-				D067272C215F92220052575E /* nav_back_normal@2x.png */,
-				D067272D215F92220052575E /* login_delet_tap@3x.png */,
-				D067272E215F92220052575E /* login_forget_success@3x.png */,
-				D067272F215F92220052575E /* login_delet_tap@2x.png */,
-				D0672730215F92220052575E /* login_forget_success@2x.png */,
-				D0672731215F92220052575E /* nav_back_normal@3x.png */,
-				D0672732215F92220052575E /* nav_back_tap@2x.png */,
-				D0672733215F92220052575E /* nav_back_tap@3x.png */,
-				D0672734215F92220052575E /* login_password@3x.png */,
-				D0672735215F92220052575E /* login_user@2x.png */,
-				D0672736215F92220052575E /* login_Verification@2x.png */,
-				D0672737215F92220052575E /* toast_warning@2x.png */,
-				D0672738215F92220052575E /* toast_warning@3x.png */,
-				D0672739215F92220052575E /* login_Verification@3x.png */,
-				D067273A215F92220052575E /* login_user@3x.png */,
-				D067273B215F92220052575E /* login_password@2x.png */,
-				D067273C215F92220052575E /* login_logo@2x.png */,
-				D067273D215F92220052575E /* toast_right@3x.png */,
-				D067273E215F92220052575E /* toast_loading@2x.png */,
-				D067273F215F92220052575E /* toast_wrong@2x.png */,
-				D0672740215F92220052575E /* login_delet@3x.png */,
-				D0672741215F92220052575E /* btn_icon_loding@2x.png */,
-				D0672742215F92220052575E /* btn_icon_loding@3x.png */,
-				D0672743215F92220052575E /* login_delet@2x.png */,
-				D0672744215F92220052575E /* toast_wrong@3x.png */,
-				D0672745215F92220052575E /* toast_loading@3x.png */,
-				D0672746215F92220052575E /* toast_right@2x.png */,
-				D0672747215F92220052575E /* login_logo@3x.png */,
-			);
-			path = login_images_icon;
-			sourceTree = "<group>";
-		};
-		D0672748215F92220052575E /* login_标注 */ = {
-			isa = PBXGroup;
-			children = (
-				D0672749215F92220052575E /* login_iPad控件_spec.png */,
-				D067274A215F92220052575E /* login_toast_spec.png */,
-				D067274B215F92220052575E /* login_keyboard1_spec.png */,
-				D067274C215F92220052575E /* login_toast_locationg_spec.png */,
-				D067274D215F92220052575E /* login_password_spec.png */,
-				D067274E215F92220052575E /* call_spec.png */,
-				D067274F215F92220052575E /* login_keyboard2_spec.png */,
-				D0672750215F92220052575E /* login_forget1_spec.png */,
-			);
-			path = "login_标注";
-			sourceTree = "<group>";
-		};
-		D0672751215F92220052575E /* login_png */ = {
-			isa = PBXGroup;
-			children = (
-				D0672752215F92220052575E /* login_keyboard2.png */,
-				D0672753215F92220052575E /* login_keyboard1.png */,
-				D0672754215F92220052575E /* login_toast.png */,
-				D0672755215F92220052575E /* login_password.png */,
-				D0672756215F92220052575E /* login_iPad控件.png */,
-				D0672757215F92220052575E /* login_message.png */,
-				D0672758215F92220052575E /* call.png */,
-				D0672759215F92220052575E /* login_forget1.png */,
-				D067275A215F92220052575E /* login_toast_locationg.png */,
-				D067275B215F92220052575E /* login_forget2.png */,
-				D067275C215F92220052575E /* login_forget3.png */,
-			);
-			path = login_png;
-			sourceTree = "<group>";
-		};
-		D067275D215F92220052575E /* forget */ = {
-			isa = PBXGroup;
-			children = (
-				D067275E215F92220052575E /* login_keyboard2.png */,
-				D067275F215F92220052575E /* login_iPad控件.png */,
-				D0672760215F92220052575E /* call.png */,
-				D0672761215F92220052575E /* login_forget1.png */,
-				D0672762215F92220052575E /* login_forget2.png */,
-				D0672763215F92220052575E /* login_forget3.png */,
-			);
-			path = forget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,68 +221,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0672796215F92220052575E /* login_forget1.png in Resources */,
 				D05291072151E99F00211C76 /* LaunchScreen.storyboard in Resources */,
-				D0672777215F92220052575E /* toast_wrong@2x.png in Resources */,
-				D0672778215F92220052575E /* login_delet@3x.png in Resources */,
-				D0672783215F92220052575E /* login_toast_locationg_spec.png in Resources */,
-				D0672786215F92220052575E /* login_keyboard2_spec.png in Resources */,
 				D05291272152333300211C76 /* JRMaxBtn@2x.png in Resources */,
-				D0672767215F92220052575E /* login_delet_tap@2x.png in Resources */,
-				D0672795215F92220052575E /* call.png in Resources */,
-				D0672773215F92220052575E /* login_password@2x.png in Resources */,
-				D0672775215F92220052575E /* toast_right@3x.png in Resources */,
-				D0672780215F92220052575E /* login_iPad控件_spec.png in Resources */,
-				D0672776215F92220052575E /* toast_loading@2x.png in Resources */,
 				D05291262152333300211C76 /* JRBackBtn@2x.png in Resources */,
-				D067276B215F92220052575E /* nav_back_tap@3x.png in Resources */,
-				D0672787215F92220052575E /* login_forget1_spec.png in Resources */,
-				D0672794215F92220052575E /* login_iPad控件.png in Resources */,
 				D05291242152333300211C76 /* JRMinBtn@2x.png in Resources */,
-				D067277D215F92220052575E /* toast_loading@3x.png in Resources */,
-				D0672766215F92220052575E /* login_forget_success@3x.png in Resources */,
-				D0672764215F92220052575E /* nav_back_normal@2x.png in Resources */,
-				D0672768215F92220052575E /* login_forget_success@2x.png in Resources */,
-				D0672779215F92220052575E /* btn_icon_loding@2x.png in Resources */,
 				D05291252152333300211C76 /* JRPauseBtn@2x.png in Resources */,
-				D067278A215F92220052575E /* login_toast.png in Resources */,
-				D067278D215F92220052575E /* login_message.png in Resources */,
-				D0672798215F92220052575E /* login_forget3.png in Resources */,
-				D067276D215F92220052575E /* login_user@2x.png in Resources */,
-				D067276A215F92220052575E /* nav_back_tap@2x.png in Resources */,
-				D0672793215F92220052575E /* login_keyboard2.png in Resources */,
-				D0672774215F92220052575E /* login_logo@2x.png in Resources */,
-				D0672797215F92220052575E /* login_forget2.png in Resources */,
-				D067277B215F92220052575E /* login_delet@2x.png in Resources */,
-				D067278E215F92220052575E /* call.png in Resources */,
-				D0672769215F92220052575E /* nav_back_normal@3x.png in Resources */,
-				D0672765215F92220052575E /* login_delet_tap@3x.png in Resources */,
-				D0672781215F92220052575E /* login_toast_spec.png in Resources */,
 				D05291232152333300211C76 /* JRRound.png in Resources */,
-				D0672788215F92220052575E /* login_keyboard2.png in Resources */,
-				D067277C215F92220052575E /* toast_wrong@3x.png in Resources */,
-				D067278C215F92220052575E /* login_iPad控件.png in Resources */,
-				D067276C215F92220052575E /* login_password@3x.png in Resources */,
-				D0672771215F92220052575E /* login_Verification@3x.png in Resources */,
-				D067277E215F92220052575E /* toast_right@2x.png in Resources */,
-				D0672792215F92220052575E /* login_forget3.png in Resources */,
-				D0672791215F92220052575E /* login_forget2.png in Resources */,
-				D0672789215F92220052575E /* login_keyboard1.png in Resources */,
 				D05291042151E99F00211C76 /* Assets.xcassets in Resources */,
-				D067277F215F92220052575E /* login_logo@3x.png in Resources */,
-				D0672784215F92220052575E /* login_password_spec.png in Resources */,
-				D067276E215F92220052575E /* login_Verification@2x.png in Resources */,
-				D0672770215F92220052575E /* toast_warning@3x.png in Resources */,
-				D067276F215F92220052575E /* toast_warning@2x.png in Resources */,
-				D067277A215F92220052575E /* btn_icon_loding@3x.png in Resources */,
-				D0672790215F92220052575E /* login_toast_locationg.png in Resources */,
 				D05291222152333300211C76 /* JRPlayBtn@2x.png in Resources */,
-				D067278F215F92220052575E /* login_forget1.png in Resources */,
-				D0672785215F92220052575E /* call_spec.png in Resources */,
-				D0672772215F92220052575E /* login_user@3x.png in Resources */,
 				D05291022151E99E00211C76 /* Main.storyboard in Resources */,
-				D067278B215F92220052575E /* login_password.png in Resources */,
-				D0672782215F92220052575E /* login_keyboard1_spec.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

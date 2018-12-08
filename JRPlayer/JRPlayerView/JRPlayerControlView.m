@@ -6,6 +6,7 @@
 //  Copyright © 2018年 onesmart. All rights reserved.
 //
 
+#import "MyPlayProgressView.h"
 #import "JRPlayerControlView.h"
 
 #define kControlBarHeight 40.0f
@@ -36,7 +37,7 @@
 @property (nonatomic, strong) UIButton *playBtn;
 @property (nonatomic, strong) UIButton *pauseBtn;
 @property (nonatomic, strong) UILabel *playedTimeLabel;
-@property (nonatomic, strong) UISlider *slider;
+@property (nonatomic, strong) MyPlayProgressView *slider;
 @property (nonatomic, strong) UILabel *allTimeLabel;
 
 @property (nonatomic, strong) UIButton *maxBtn;
@@ -106,7 +107,7 @@
     [_bottomView addSubview:_playedTimeLabel];
     
     //添加slider
-    _slider = [UISlider new];
+    _slider = [MyPlayProgressView new];
     _slider.minimumValue = 0.0;
     _slider.maximumValue = 1.0;
     [_bottomView addSubview:_slider];
